@@ -1,4 +1,4 @@
-package Exception1;
+package MyExercisesJavaAdvanced.Exception1;
 
 public class Exception1 {
     public static void main(String[] args) {

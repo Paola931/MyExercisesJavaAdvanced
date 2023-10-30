@@ -1,4 +1,4 @@
-package Exception4;
+package MyExercisesJavaAdvanced.Exception4;
 
 import java.util.Arrays;
 import java.util.Random;

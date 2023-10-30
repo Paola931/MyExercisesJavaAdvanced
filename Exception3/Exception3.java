@@ -1,4 +1,4 @@
-package Exception3;
+package MyExercisesJavaAdvanced.Exception3;
 
 import static java.lang.Double.NaN;
 

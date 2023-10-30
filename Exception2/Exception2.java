@@ -1,4 +1,4 @@
-package Exception2;
+package MyExercisesJavaAdvanced.Exception2;
 
 
 
