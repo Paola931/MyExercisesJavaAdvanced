@@ -2,7 +2,7 @@ package HashSet.Hashset1.HashSet3;
 
 import java.util.*;
 
-public class HashSet3 {
+public class HashSet13 {
     public static void main(String[]args){
         Set<String> lista = new HashSet<>(Arrays.asList("sale","pepe","caffe","zucchero"));
         String indice = "sale";

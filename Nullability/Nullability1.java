@@ -1,6 +1,6 @@
-package Nullability;
+package MyExercisesJavaAdvanced.Nullability;
 
-public class Nullability {
+public class Nullability1 {
     public static void main (String[]args) throws Exception {
         Integer num = 20;
         Integer den = 30;

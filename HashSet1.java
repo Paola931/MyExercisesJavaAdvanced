@@ -1,4 +1,4 @@
-package HashSet.Hashset1;
+package MyExercisesJavaAdvanced;
 
 import java.util.HashSet;
 import java.util.Set;
