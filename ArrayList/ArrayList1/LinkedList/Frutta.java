@@ -1,4 +1,4 @@
-package ArrayList.ArrayList1.LinkedList;
+package MyExercisesJavaAdvanced.ArrayList.ArrayList1.LinkedList;
 
 public class Frutta {
     String nome;

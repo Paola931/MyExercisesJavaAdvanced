@@ -1,4 +1,4 @@
-package RecordClass;
+package MyExercisesJavaAdvanced.RecordClass;
 
 public class RecordClass {
     public static void main(String[]args){

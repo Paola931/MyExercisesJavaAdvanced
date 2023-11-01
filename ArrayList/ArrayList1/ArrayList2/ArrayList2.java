@@ -1,4 +1,4 @@
-package ArrayList.ArrayList1.ArrayList2;
+package MyExercisesJavaAdvanced.ArrayList.ArrayList1.ArrayList2;
 
 import ArrayList.ArrayList1.ArrayList1.Student;
 

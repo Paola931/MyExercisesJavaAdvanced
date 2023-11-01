@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Exception4 {
     public static void main(String[]args) throws Exception {
         double [] num = {1.0,2.5,3.0,4.5,5.0,6.5,7.0,8.5,9.0};

@@ -1,4 +1,4 @@
-package ArrayList.ArrayList1.ArrayList2;
+package MyExercisesJavaAdvanced.ArrayList.ArrayList1.ArrayList2;
 
 public class Student {
     String nome,cognome;

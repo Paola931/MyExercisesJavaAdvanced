@@ -1,4 +1,8 @@
-public class Exception3 {
+package MyExercisesJavaAdvanced.Exception3;
+
+import static java.lang.Double.NaN;
+
+public class Exception13 {
     public static void main(String[]args){
         double num = 2;
         double num2 = 0;
