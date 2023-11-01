@@ -1,46 +1,53 @@
-package MyExercisesJavaAdvanced.Exception4;
-
-import java.util.Arrays;
-import java.util.Random;
-import static java.lang.Double.NaN;
-
 public class Exception4 {
-    public static void main(String[]args) {
-        double [] num = new double[10];
-        double indice = 12;
+    public static void main(String[]args) throws Exception {
+        double [] num = {1.0,2.5,3.0,4.5,5.0,6.5,7.0,8.5,9.0};
+        double indice = 1.0;
 
 
-        System.out.println(Arrays.toString(riempimento(num)));
+        System.out.println(Arrays.toString(stampa(num)));
         System.out.println(indiceArr(num,indice));
         gestione(indice,num);
 
     }
-    public static double [] riempimento (double[]num){
-        Random r = new Random();
+    public static double [] stampa (double[]num){
         for(int i = 0;i < num.length;i++){
-            num[i]= r.nextInt(0,20);
         }
         return num;
     }
-    public static boolean indiceArr (double [] num,double indice){
+    public static boolean indiceArr (double [] num,double indice) throws Exception {
         for(double n : num){
             if( n == indice){
                 return true;
+            }else{
+                throw new Exception("L'indice non è presente all'interno dell'array");
             }
         }
-        return false;
+        return true;
+    }
+    public static boolean divisione (double indice) throws ArithmeticException {
+        if (Double.isNaN(indice % 0)){
+            throw new ArithmeticException("Impossibile dividere un numero per 0");
+        }
+        return true;
     }
 
-    public static void gestione (double indice,double[] num) {
+    public static String gestione (double indice,double[] num) throws Exception {
         try{
-            if(Double.isNaN(indice % 0)){
-                throw new Exception("Impossibile dividere un numero per 0");
+            if(!divisione(indice)){
+
             }
-        }  catch (Exception e) {
+
+        } catch (ArithmeticException e){
+            if(divisione(indice)){
+                System.out.println(e);
+            }
+
+        } catch (Exception e) {
             if (!indiceArr(num,indice)){
-                System.out.println("L'indice non è presente all'interno dell'array"+ e);
+                System.out.println(e);
             }
         }
+        return null;
     }
 
 }
