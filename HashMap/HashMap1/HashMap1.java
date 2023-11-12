@@ -1,4 +1,4 @@
-package HashMap.HashMap1;
+package MyExercisesJavaAdvanced.HashMap.HashMap1;
 
 import java.util.AbstractMap;
 import java.util.HashMap;

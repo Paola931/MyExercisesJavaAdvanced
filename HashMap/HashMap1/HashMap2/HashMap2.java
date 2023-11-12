@@ -1,4 +1,4 @@
-package HashMap.HashMap1.HashMap2;
+package MyExercisesJavaAdvanced.HashMap.HashMap1.HashMap2;
 
 import java.util.ArrayList;
 import java.util.HashMap;
