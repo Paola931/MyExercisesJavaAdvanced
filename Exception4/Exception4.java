@@ -1,55 +1,47 @@
 import java.util.Arrays;
 
-public class Exception4 {
-    public static void main(String[]args) throws Exception {
-        double [] num = {1.0,2.5,3.0,4.5,5.0,6.5,7.0,8.5,9.0};
-        double indice = 1.0;
+package Exception4;
 
+import java.util.Arrays;
+public class Exception4 {
+    public static void main(String[] args) throws Exception {
+        double[] num = {1.0, 2.5, 3.0, 4.5, 5.0, 6.5, 7.0, 8.5, 9.0};
+        double indice = 80.0;
 
         System.out.println(Arrays.toString(stampa(num)));
-        System.out.println(indiceArr(num,indice));
-        gestione(indice,num);
+
+        try {
+            System.out.println(indiceArr(num, indice));
+            System.out.println(divisione(indice));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
 
     }
-    public static double [] stampa (double[]num){
-        for(int i = 0;i < num.length;i++){
+
+    public static double[] stampa(double[] num) {
+        for (int i = 0; i < num.length; i++) {
         }
         return num;
     }
-    public static boolean indiceArr (double [] num,double indice) throws Exception {
-        for(double n : num){
-            if( n == indice){
-                return true;
-            }else{
+
+    public static boolean indiceArr(double[] num, double indice) throws Exception {
+        for (double n : num) {
+            if (n != indice) {
                 throw new Exception("L'indice non è presente all'interno dell'array");
+            } else {
+                return true;
             }
         }
         return true;
     }
-    public static boolean divisione (double indice) throws ArithmeticException {
-        if (Double.isNaN(indice % 0)){
+
+    public static boolean divisione(double indice) throws ArithmeticException {
+        if (Double.isNaN(indice % 0)) {
             throw new ArithmeticException("Impossibile dividere un numero per 0");
         }
         return true;
-    }
-
-    public static String gestione (double indice,double[] num) throws Exception {
-        try{
-            if(!divisione(indice)){
-
-            }
-
-        } catch (ArithmeticException e){
-            if(divisione(indice)){
-                System.out.println(e);
-            }
-
-        } catch (Exception e) {
-            if (!indiceArr(num,indice)){
-                System.out.println(e);
-            }
-        }
-        return null;
     }
 
 }
