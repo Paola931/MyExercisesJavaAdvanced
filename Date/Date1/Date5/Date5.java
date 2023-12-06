@@ -12,20 +12,17 @@ public class Date5 {
         System.out.println(areEquals(data1,data2));
 
     }
-    public static OffsetDateTime parseData1 (String data1){
-        return OffsetDateTime.parse(data1);
-    }
-    public static OffsetDateTime parseData2 (String data2){
-        return OffsetDateTime.parse(data2);
+    public static OffsetDateTime parseData (String data){
+        return OffsetDateTime.parse(data);
     }
     public static Boolean isBefore(String data1, String data2){
-        return parseData1(data1).isBefore(parseData2(data2));
+        return parseData(data1).isBefore(parseData(data2));
     }
     public static Boolean isAfter(String data1, String data2){
-        return parseData2(data2).isAfter(parseData1(data1));
+        return parseData(data2).isAfter(parseData(data1));
     }
     public static Boolean areEquals(String data1, String data2){
-       return parseData1(data1).isEqual(OffsetDateTime.now()) && parseData2(data2).isEqual(OffsetDateTime.now());
+       return parseData(data1).isEqual(OffsetDateTime.now()) && parseData(data2).isEqual(OffsetDateTime.now());
     }
 }
    /* Crea un oggetto data da questa stringa 2023-03-01T13:00:00Z
